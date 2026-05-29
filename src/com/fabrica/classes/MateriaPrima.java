@@ -1,4 +1,6 @@
-package com.fabrica.model;
+package com.fabrica.classes;
+
+import com.fabrica.abstractclasses.Item;
 
 public class MateriaPrima extends Item {
     private final String fornecedor;

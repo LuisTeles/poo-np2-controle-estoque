@@ -1,11 +1,12 @@
-package com.fabrica.network;
+package com.fabrica.threads;
 
-import com.fabrica.exception.PersistenciaException;
-import com.fabrica.exception.TcpAlertException;
-import com.fabrica.io.AlertLogRepository;
-import com.fabrica.model.ItemSnapshot;
-import com.fabrica.model.StockAlert;
-import com.fabrica.service.InventoryService;
+import com.fabrica.classes.ItemSnapshot;
+import com.fabrica.classes.StockAlert;
+import com.fabrica.exceptions.PersistenciaException;
+import com.fabrica.exceptions.TcpAlertException;
+import com.fabrica.repositories.AlertLogRepository;
+import com.fabrica.services.InventoryService;
+import com.fabrica.tcp.TcpAlertClient;
 
 import java.util.HashSet;
 import java.util.List;

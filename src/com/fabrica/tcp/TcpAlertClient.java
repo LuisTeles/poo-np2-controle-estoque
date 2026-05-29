@@ -1,7 +1,7 @@
-package com.fabrica.network;
+package com.fabrica.tcp;
 
-import com.fabrica.exception.TcpAlertException;
-import com.fabrica.model.StockAlert;
+import com.fabrica.classes.StockAlert;
+import com.fabrica.exceptions.TcpAlertException;
 
 import java.io.IOException;
 import java.io.PrintWriter;

@@ -1,16 +1,16 @@
-package com.fabrica;
+package com.fabrica.app;
 
 import com.fabrica.config.AppConfig;
-import com.fabrica.exception.EstoqueInsuficienteException;
-import com.fabrica.exception.ItemNaoEncontradoException;
-import com.fabrica.exception.PersistenciaException;
-import com.fabrica.io.AlertLogRepository;
-import com.fabrica.io.InventoryFileRepository;
-import com.fabrica.io.MovementLogRepository;
-import com.fabrica.model.ItemSnapshot;
-import com.fabrica.network.StockMonitorThread;
-import com.fabrica.network.TcpAlertClient;
-import com.fabrica.service.InventoryService;
+import com.fabrica.classes.ItemSnapshot;
+import com.fabrica.exceptions.EstoqueInsuficienteException;
+import com.fabrica.exceptions.ItemNaoEncontradoException;
+import com.fabrica.exceptions.PersistenciaException;
+import com.fabrica.repositories.AlertLogRepository;
+import com.fabrica.repositories.InventoryFileRepository;
+import com.fabrica.repositories.MovementLogRepository;
+import com.fabrica.services.InventoryService;
+import com.fabrica.tcp.TcpAlertClient;
+import com.fabrica.threads.StockMonitorThread;
 
 import java.util.List;
 import java.util.Scanner;

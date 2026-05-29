@@ -1,2 +1,25 @@
 [2026-05-15 18:44:12] Estoque critico para Teste (0002) - atual: 23, limite: 500.
 [2026-05-15 18:46:30] Estoque critico para Tests pr (2000) - atual: 1, limite: 20.
+[2026-05-28 19:33:15] Estoque critico para Teste (0002) - atual: 22, limite: 500. Falha no envio TCP: Nao foi possivel enviar alerta TCP para 127.0.0.1:5050.
+[2026-05-28 19:33:15] Estoque critico para Tests pr (2000) - atual: 0, limite: 20. Falha no envio TCP: Nao foi possivel enviar alerta TCP para 127.0.0.1:5050.
+[2026-05-28 19:33:55] Estoque critico para Teste (0002) - atual: 22, limite: 500.
+[2026-05-28 19:33:55] Estoque critico para Tests pr (2000) - atual: 0, limite: 20.
+[2026-05-28 19:34:19] Estoque critico para nome (002) - atual: 2, limite: 25.
+[2026-05-28 19:34:59] Estoque critico para done (003) - atual: 3, limite: 7.
+[2026-05-28 19:42:54] Estoque critico para lll (005) - atual: 2, limite: 8.
+[2026-05-29 17:14:09] Estoque critico para Teste (0002) - atual: 22, limite: 500.
+[2026-05-29 17:14:09] Estoque critico para nome (002) - atual: 0, limite: 25.
+[2026-05-29 17:14:09] Estoque critico para done (003) - atual: 3, limite: 7.
+[2026-05-29 17:14:09] Estoque critico para lll (005) - atual: 2, limite: 8.
+[2026-05-29 17:14:09] Estoque critico para Tests pr (2000) - atual: 0, limite: 20.
+[2026-05-29 17:16:37] Estoque critico para nome (0004) - atual: 3, limite: 9.
+[2026-05-29 17:17:15] Estoque critico para nome1 (0005) - atual: 1, limite: 10.
+[2026-05-29 17:20:22] Estoque critico para 10 (defrgthyjukilo) - atual: 1, limite: 1.
+[2026-05-29 18:06:35] Estoque critico para Teste (0002) - atual: 22, limite: 500.
+[2026-05-29 18:06:35] Estoque critico para nome (0004) - atual: 2, limite: 9.
+[2026-05-29 18:06:35] Estoque critico para nome1 (0005) - atual: 0, limite: 10.
+[2026-05-29 18:06:35] Estoque critico para nome (002) - atual: 0, limite: 25.
+[2026-05-29 18:06:35] Estoque critico para done (003) - atual: 3, limite: 7.
+[2026-05-29 18:06:35] Estoque critico para lll (005) - atual: 2, limite: 8.
+[2026-05-29 18:06:35] Estoque critico para Tests pr (2000) - atual: 0, limite: 20.
+[2026-05-29 18:06:35] Estoque critico para 10 (defrgthyjukilo) - atual: 1, limite: 1.

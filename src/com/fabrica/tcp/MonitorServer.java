@@ -1,6 +1,6 @@
-package com.fabrica.monitor;
+package com.fabrica.tcp;
 
-import com.fabrica.model.StockAlert;
+import com.fabrica.classes.StockAlert;
 
 import java.io.BufferedReader;
 import java.io.IOException;

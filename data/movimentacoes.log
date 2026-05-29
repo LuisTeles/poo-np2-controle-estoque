@@ -2,3 +2,13 @@
 0002	2026-05-15 18:46:30 - Consumo na producao de 1 unidade(s) do produto 2000.
 2000	2026-05-15 18:46:30 - Entrada por producao usando materia-prima 0002.
 2000	2026-05-15 18:46:53 - Despacho de 1 unidade(s) para expedicao.
+002	2026-05-28 19:34:18 - Cadastro inicial com quantidade 2.
+002	2026-05-28 19:34:59 - Consumo na producao de 3 unidade(s) do produto 003.
+003	2026-05-28 19:34:59 - Entrada por producao usando materia-prima 002.
+002	2026-05-28 19:42:53 - Consumo na producao de 2 unidade(s) do produto 005.
+005	2026-05-28 19:42:53 - Entrada por producao usando materia-prima 002.
+0004	2026-05-29 17:16:37 - Cadastro inicial com quantidade 3.
+0004	2026-05-29 17:17:14 - Consumo na producao de 1 unidade(s) do produto 0005.
+0005	2026-05-29 17:17:14 - Entrada por producao usando materia-prima 0004.
+defrgthyjukilo	2026-05-29 17:20:20 - Cadastro inicial com quantidade 1.
+0005	2026-05-29 17:20:47 - Despacho de 1 unidade(s) para expedicao.

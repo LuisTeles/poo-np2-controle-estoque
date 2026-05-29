@@ -1,4 +1,4 @@
-package com.fabrica.model;
+package com.fabrica.interfaces;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.fabrica.model;
+package com.fabrica.classes;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -1,6 +1,6 @@
-package com.fabrica.io;
+package com.fabrica.repositories;
 
-import com.fabrica.exception.PersistenciaException;
+import com.fabrica.exceptions.PersistenciaException;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

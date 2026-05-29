@@ -1,14 +1,14 @@
-package com.fabrica.service;
+package com.fabrica.services;
 
-import com.fabrica.exception.EstoqueInsuficienteException;
-import com.fabrica.exception.ItemNaoEncontradoException;
-import com.fabrica.exception.PersistenciaException;
-import com.fabrica.io.InventoryFileRepository;
-import com.fabrica.io.MovementLogRepository;
-import com.fabrica.model.Item;
-import com.fabrica.model.ItemSnapshot;
-import com.fabrica.model.MateriaPrima;
-import com.fabrica.model.ProdutoAcabado;
+import com.fabrica.abstractclasses.Item;
+import com.fabrica.classes.ItemSnapshot;
+import com.fabrica.classes.MateriaPrima;
+import com.fabrica.classes.ProdutoAcabado;
+import com.fabrica.exceptions.EstoqueInsuficienteException;
+import com.fabrica.exceptions.ItemNaoEncontradoException;
+import com.fabrica.exceptions.PersistenciaException;
+import com.fabrica.repositories.InventoryFileRepository;
+import com.fabrica.repositories.MovementLogRepository;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

@@ -1,6 +1,8 @@
-package com.fabrica.model;
+package com.fabrica.abstractclasses;
 
-import com.fabrica.exception.EstoqueInsuficienteException;
+import com.fabrica.classes.ItemSnapshot;
+import com.fabrica.exceptions.EstoqueInsuficienteException;
+import com.fabrica.interfaces.Rastreavel;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

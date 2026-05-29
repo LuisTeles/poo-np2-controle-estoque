@@ -2,8 +2,8 @@
 
 This project uses **two separate Java applications**:
 
-1. **Factory Core** - `com.fabrica.Main`
-2. **Monitoring Terminal** - `com.fabrica.monitor.MonitorMain`
+1. **Factory Core** - `com.fabrica.app.Main`
+2. **Monitoring Terminal** - `com.fabrica.tcp.MonitorMain`
 
 They run in **different terminals** and communicate through a **TCP connection** on the local machine.
 
@@ -38,7 +38,7 @@ Even though both programs run on the same machine, TCP still works the same way 
 When you run:
 
 ```bash
-java -cp out com.fabrica.monitor.MonitorMain
+java -cp out com.fabrica.tcp.MonitorMain
 ```
 
 the monitor creates a `ServerSocket`.
@@ -57,7 +57,7 @@ This terminal is dedicated to monitoring.
 When you run:
 
 ```bash
-java -cp out com.fabrica.Main
+java -cp out com.fabrica.app.Main
 ```
 
 the factory CLI starts normally and also creates:

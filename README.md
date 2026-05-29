@@ -7,10 +7,10 @@ Compile once:
 javac -d out $(find src -name '*.java')
 2.
 Terminal 1 — start the monitor:
-java -cp out com.fabrica.monitor.MonitorMain
+java -cp out com.fabrica.tcp.MonitorMain
 3.
 Terminal 2 — start the factory app:
-java -cp out com.fabrica.Main
+java -cp out com.fabrica.app.Main
 
 Este documento detalha o contexto, escopo e requisitos técnicos do projeto **TraceCore**, um sistema desenvolvido em Java para controle de fluxo de produção, focado na aplicação prática de Programação Orientada a Objetos e comunicação em rede.
 
@@ -40,7 +40,7 @@ O projeto foi estruturado para utilizar cada conceito do cronograma de estudos:
 * **Aula 03 (Variáveis Primitivas):** Uso de `int` para quantidades, `double` para pesos e `boolean` para status de ativação.
 * **Aula 04 (Introdução à POO):** Representação de entidades do mundo real como `Lote` e `Fornecedor`.
 * **Aula 05 (Arrays):** Manipulação inicial de buffers de dados e estruturas fixas de categorias.
-* **Aula 06 (Pacotes):** Organização em `com.tracecore.model`, `service`, `network`, `io` e `exception`.
+* **Aula 06 (Pacotes):** Organização por conceito em `com.fabrica.classes`, `abstractclasses`, `interfaces`, `exceptions`, `repositories`, `threads` e `tcp`.
 * **Aula 07 (Modificadores de Acesso):** Uso rigoroso de `private` para atributos, protegendo a integridade dos dados.
 * **Aula 08 (Construtores e Static):** Construtores personalizados para garantir objetos válidos; `static` para contadores globais de IDs.
 * **Aula 09 (Herança e Polimorfismo):** `MateriaPrima` e `ProdutoAcabado` herdam de `Item`. O sistema trata diferentes tipos de itens de forma polimórfica.
@@ -48,7 +48,7 @@ O projeto foi estruturado para utilizar cada conceito do cronograma de estudos:
 * **Aula 11 (Interface):** Interface `Rastreavel` que obriga a implementação de métodos de log de movimentação.
 * **Aula 12 (Collections API):** Uso de `ArrayList` para o inventário e `Map` para busca rápida de itens por código único.
 * **Aula 13 (Exceções):** Criação de `EstoqueInsuficienteException` e tratamento de erros de input com `try-catch`.
-* **Aula 14 (Java NIO[README.md](README.md)):** Persistência de dados em arquivos `.txt` ou `.csv` usando `Paths`, `Files` e `StandardOpenOption` para salvar o estado da fábrica.
+* **Aula 14 (Java NIO):** Persistência de dados em arquivos `.txt` ou `.csv` usando `Paths`, `Files` e `StandardOpenOption` para salvar o estado da fábrica.
 * **Aula 15 (Threads):** Implementação de uma thread de monitoramento que roda independentemente do menu principal.
 
 ---
@@ -76,6 +76,18 @@ Um menu amigável e validado:
 - **`MateriaPrima` (Extends Item):** `String fornecedor`.
 - **`ProdutoAcabado` (Extends Item):** `String dataFabricacao`.
 - **`Rastreavel` (Interface):** `void registrarMovimentacao(String msg)`.
+
+### Organização por conceitos
+
+- **`com.fabrica.app`**: pontos de entrada da aplicação.
+- **`com.fabrica.abstractclasses`**: classe base abstrata.
+- **`com.fabrica.classes`**: classes concretas do domínio e DTOs.
+- **`com.fabrica.interfaces`**: contratos do projeto.
+- **`com.fabrica.exceptions`**: exceções customizadas.
+- **`com.fabrica.repositories`**: persistência em arquivos.
+- **`com.fabrica.services`**: regras de negócio.
+- **`com.fabrica.threads`**: concorrência.
+- **`com.fabrica.tcp`**: comunicação entre terminais.
 
 ---
 
@@ -145,3 +157,10 @@ Criou um arquivo md explicando em detalhes por o protoclo tcp com tread foi usad
 
 ---
 
+### 4 GitHub copilot pro (GPT-5.4)
+Reestructure the pages to instead of use the industry standard use a concept based folder strucute ex: classes, abstract classes, superclass, exeptions
+
+#### Resultado:
+O projeto foi reorganizado para uma estrutura baseada em conceitos de POO. Os pacotes antigos orientados por camada foram substituídos por pastas como `app`, `abstractclasses`, `classes`, `interfaces`, `exceptions`, `repositories`, `services`, `threads` e `tcp`, com atualização dos imports, packages e comandos documentados no README.
+
+---

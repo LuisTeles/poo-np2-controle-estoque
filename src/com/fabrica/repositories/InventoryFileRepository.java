@@ -1,10 +1,10 @@
-package com.fabrica.io;
+package com.fabrica.repositories;
 
-import com.fabrica.exception.PersistenciaException;
-import com.fabrica.model.Item;
-import com.fabrica.model.ItemSnapshot;
-import com.fabrica.model.MateriaPrima;
-import com.fabrica.model.ProdutoAcabado;
+import com.fabrica.abstractclasses.Item;
+import com.fabrica.classes.ItemSnapshot;
+import com.fabrica.classes.MateriaPrima;
+import com.fabrica.classes.ProdutoAcabado;
+import com.fabrica.exceptions.PersistenciaException;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

@@ -1,4 +1,6 @@
-package com.fabrica.model;
+package com.fabrica.classes;
+
+import com.fabrica.abstractclasses.Item;
 
 public class ProdutoAcabado extends Item {
     private final String dataFabricacao;

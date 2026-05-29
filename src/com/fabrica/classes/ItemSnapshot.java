@@ -1,4 +1,4 @@
-package com.fabrica.model;
+package com.fabrica.classes;
 
 public class ItemSnapshot {
     private final String tipo;
