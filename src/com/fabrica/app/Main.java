@@ -1,10 +1,11 @@
 package com.fabrica.app;
 
-import com.fabrica.config.AppConfig;
-import com.fabrica.classes.ItemSnapshot;
-import com.fabrica.exceptions.EstoqueInsuficienteException;
 import com.fabrica.exceptions.ItemNaoEncontradoException;
 import com.fabrica.exceptions.PersistenciaException;
+import com.fabrica.exceptions.TcpAlertException;
+import com.fabrica.exceptions.EstoqueInsuficienteException;
+import com.fabrica.config.AppConfig;
+import com.fabrica.classes.ItemSnapshot;
 import com.fabrica.repositories.AlertLogRepository;
 import com.fabrica.repositories.InventoryFileRepository;
 import com.fabrica.repositories.MovementLogRepository;
