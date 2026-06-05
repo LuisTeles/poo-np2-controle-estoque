@@ -25,17 +25,20 @@ public class StockMonitorThread extends Thread {
                               AlertLogRepository alertLogRepository,
                               long intervalMillis) {
         super("stock-monitor-thread");
+        // Injecao de dependencias: a thread recebe os objetos de que precisa em vez de cria-los internamente.
         this.inventoryService = inventoryService;
         this.tcpAlertClient = tcpAlertClient;
         this.alertLogRepository = alertLogRepository;
         this.intervalMillis = intervalMillis;
         this.criticalItemsAlreadyNotified = new HashSet<String>();
         this.running = true;
+        // Thread daemon: nao impede o encerramento da aplicacao principal.
         setDaemon(true);
     }
 
     @Override
     public void run() {
+        // Concorrencia: esta Thread roda em paralelo com o menu principal monitorando o estoque.
         while (running) {
             try {
                 monitorCriticalStock();
@@ -73,6 +76,7 @@ public class StockMonitorThread extends Thread {
 
             StockAlert alert = StockAlert.fromSnapshot(item);
             try {
+                // Composicao entre objetos: a Thread delega o envio TCP para TcpAlertClient.
                 tcpAlertClient.sendAlert(alert);
                 alertLogRepository.appendAlert(alert.formatForDisplay());
             } catch (TcpAlertException exception) {

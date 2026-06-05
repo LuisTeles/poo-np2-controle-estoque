@@ -1,6 +1,33 @@
 
 # Setup do projeto
 
+## Dvivisao do projeto
+
+Luis:
+
+*Threads, communication, integration*
+threads/StockMonitorThread, tcp/TcpAlertClient, tcp/MonitorMain, tcp/MonitorServer
+
+---
+Mariana:
+
+interfaces and exceptions**
+interfaces/Rastreavel, exceptions/*, parts of app/Main related to input validation and error messages
+
+---
+Julia:
+
+*Abstraction, inheritance, polymorphism*
+abstractclasses/Item, classes/MateriaPrima, classes/ProdutoAcabado, services/InventoryService
+
+---
+Samuel:
+
+*Persistence and support structure*
+repositories/InventoryFileRepository, repositories/MovementLogRepository, repositories/AlertLogRepository, classes/ItemSnapshot, classes/StockAlert, config/AppConfig
+
+---
+
 ### Rodar os terminais tcp
 1.
 Compile once:

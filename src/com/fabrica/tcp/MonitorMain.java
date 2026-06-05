@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class MonitorMain {
     public static void main(String[] args) {
+        // Ponto de entrada separado: este terminal executa apenas o servidor de monitoramento.
         MonitorServer monitorServer = new MonitorServer(AppConfig.MONITOR_PORT);
         try {
             monitorServer.start();
